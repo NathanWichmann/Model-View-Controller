@@ -2,37 +2,31 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Museum</title>
-  <link rel="stylesheet" type="text/css" href="/css/jass.css">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <title>User Registry</title>
+  <link rel="stylesheet" href="/css/jass.css">
 </head>
 
 <body>
-  <header>
-    <h1>Welcome to the Coders Blog</h1>
-  </header>
-  <nav>
-    <a href="/">Home</a>
-    <!-- If the user is logged in, show a logout button -->
-    {{#if loggedIn}}
-    <button id="logout" class="btn-no-style">Logout</button>
-    {{else}}
-    <!-- Otherwise, show a link to login -->
-    <a href="/login">Login</a>
+  <header class="display-flex justify-space-between align-center p-2">
+    <h1>
+      User Registry
+    </h1>
+    {{#if logged_in}}
+    <nav>
+      <button class="btn" id="logout">logout</button>
+    </nav>
     {{/if}}
-  </nav>
-  <main>
-    <aside>
-      <h2>Enjoy the discussions</h2>
-    </aside>
-    <div class="">
-      {{{body}}}
-    </div>
+  </header>
+  <main class="container container-fluid mt-5">
+    {{{ body }}}
   </main>
-  <!-- If the user is logged in, load the JS script for when they logout -->
-  {{#if loggedIn}}
+  <footer>
+      
+  </footer>
+
+  {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
 </body>
