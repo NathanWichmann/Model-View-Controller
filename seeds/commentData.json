@@ -1,0 +1,28 @@
+[
+  {
+    "user_id": 1,
+    "postId": 5,
+    "body": "I have not been a fan of electric bikes because they have been these huge aparatuses, that just seemed to big to enjoy and lug around. The new ones look just like a bike."
+  },
+  {
+    "user_id": 2,
+    "postId": 4,
+    "body": "I Really did not Read this Article"
+  },
+
+  {
+    "user_id": 3,
+    "postId": 3,
+    "body": "Amazon has been a bully in the industy since day one and should be held accountable"
+  },
+  {
+    "user_id": 4,
+    "postId": 2,
+    "body": "I was under the impression all electronics were recylable, cant you take them to a depot to be recyled once finished?"
+  },
+  {
+    "user_id": 5,
+    "postId": 1,
+    "body": "an assistive feature in the company’s PowerApps software that turns natural language into readymade code. What?"
+  }
+]
