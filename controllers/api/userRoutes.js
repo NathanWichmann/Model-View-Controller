@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User } = require('../../models');
+const withAuth = require('../../utils/auth');
 
 router.post('/login', async (req, res) => {
   try {
@@ -42,5 +43,13 @@ router.post('/logout', (req, res) => {
     res.status(404).end();
   }
 });
+
+
+// router.post('/create', withAuth, (req, res) => {
+  
+//   console.log(req.body);
+
+//   //create user using sequelize (.cretae)
+// });
 
 module.exports = router;

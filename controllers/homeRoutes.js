@@ -29,4 +29,9 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+// router.get('/signup', (req,res) => {
+//   //check to see if logged in  if they arent logged in send them to login page.
+//   //render the sign up HB
+// })
+
 module.exports = router;
