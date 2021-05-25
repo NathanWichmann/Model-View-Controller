@@ -23,6 +23,14 @@ User.hasMany(Comment, {
     foreignKey: 'userid'
 });
 
+User.hasMany(Post, {
+    foreignKey: 'user_id'
+});
+
+Comment.belongsTo(User, {
+    foreignKey: 'user_id'
+  });
+
 
 //onDelte: set null
 
