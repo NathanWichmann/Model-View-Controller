@@ -2,12 +2,11 @@ const sequelize = require('../config/connection');
 const { User } = require('../models');
 const { Post } = require('../models');
 const { Comment } = require('../models');
-const { Project } = require('../models');
 
 const userData = require('./userData.json');
 const postData = require('./postData.json');
 const commentData = require('./commentData.json');
-const projectData = require('./projectData.json');
+
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -25,9 +24,7 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  await Project.bulkCreate(projectData, {
-    returning: true,
-  });
+  
 
 
 

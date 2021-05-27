@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../../models');
+const { User, Post, Comment } = require('../../models');
 // const withAuth = require('../../utils/auth');
 
 
@@ -34,7 +34,7 @@ router.post('/login', async (req, res) => {
     const validPassword = await userData.checkPassword(req.body.password);
 
     if (!validPassword) {
-      console.log('no passwordd')
+      console.log('no password')
       res
         .status(400)
         .json({ message: 'Incorrect email or password, please try again' });
