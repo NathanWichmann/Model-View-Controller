@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { User, Post, Comment } = require('../../models');
-// const withAuth = require('../../utils/auth');
+const withAuth = require('../../utils/auth');
 
 
 router.post('/', async (req, res) => {
@@ -83,6 +83,8 @@ router.post('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+
 
 
 module.exports = router;
